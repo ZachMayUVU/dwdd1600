@@ -154,9 +154,9 @@ footer {
     color: #8c1f1f;
     padding: 1rem 0;
     font-size: 0.8rem;
+    clear:both;
 }
 
 footer a {
     color: #8c1f1f;
-    clear:both;
 }
