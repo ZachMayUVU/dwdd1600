@@ -1,0 +1,224 @@
+/*Browser compatibilty*/
+
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Martian Mono", monospace;
+    font-size: 16px;
+    font-weight: 400;
+    font-variation-settings:"wdth" 75;
+    margin: 0;
+    background-color: #333;
+}
+
+header {
+    font-family: "Creepster", system-ui;
+    font-weight: 300;
+    font-size: 24px;
+    background-color: #888;
+    padding: 1rem 2vw;
+    display:flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #8c1f1f;
+}
+
+header p {
+    margin: 0;
+    color: #601a1a;
+    letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 600px){
+    nav ul{
+        margin:0;
+        padding:0 2vw;
+        list-style-type: none;
+    }
+
+    nav a{
+        display:block;
+        padding:0.8rem;
+        text-decoration: none;
+        font-weight: 800;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: solid 2px #888;
+        color: white;
+    }
+
+    nav li.active a{
+        background-color: #8c1f1f;
+        background-image: linear-gradient(to top, #601a1a, #8c1f1f);
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 601px){
+    nav {
+        background-color: #601a1a;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav a {
+        font-size:1.1rem;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    
+    nav li.active a {
+        background-color: black;
+        color: #fff;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+        background-color: #8c1f1f;
+    }
+
+    figure.package {
+        display: flex;
+    }
+
+}
+
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #f01010;
+}
+
+main h2 {
+    color: #d02020;
+    margin-bottom: 0.2rem;
+}
+
+main p, main blockquote {
+    color: #aaa;
+    margin: 0 0 .3rem 0;
+}
+
+main a:hover {
+    color: #8c1f1f;
+}
+
+.bannerhero{
+    width:100%;
+    margin:0;
+}
+.bannerhero img{
+    width:100%;
+    height: auto;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 1% 0 0;
+}
+
+div.gallery img:hover {
+    box-shadow: 2px 2px 5px black;
+}
+
+div.gallery figcaption{
+    color: #aaa;
+}
+
+.myform fieldset{
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myform legend{
+    color: white;
+    font-size: .8rem;
+}
+
+.myform label{
+    margin: 0.5rem;
+}
+
+.myform label, .myform select, .myform [type="text"], .myform [type="tel"], .myform [type="email"], .myform textarea{
+    display: block;
+    color: #aaa;
+}
+
+.myform select, .myform [type="text"], .myform [type="tel"], .myform [type="email"], .myform textarea{
+    border: solid 1px #d03030;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.myform textarea{
+    height: 6rem;
+}
+
+.myform :required{
+    background-color: rgba(238, 222, 0, 0.1);
+}
+
+.myform [type="submit"]{
+    background-color: #601a1a;
+    border: solid 2px #888;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+figure.package {
+    margin: .5rem 1% 0 0;
+    padding: 0.5rem;
+    border: solid 4px #8c1f1f;
+    border-radius: 10px;
+}
+
+figure.package figcaption{
+    padding-left: 1rem;
+}
+figure.package a{
+    color:#aaa;
+}
+
+footer {
+    background-color: #888;
+    text-align: center;
+    color: #8c1f1f;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    clear:both;
+}
+
+footer a {
+    color: #8c1f1f;
+}
+
+header, nav, main, footer{
+    max-width: 64rem;
+    margin: 0 auto;
+}

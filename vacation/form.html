@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Budget Vacations</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A Budget Vacation Booking Website">
+        <meta name="author" content="Zach May">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png" alt="budget vacations logo" width="75" height="100">
+            <div>
+                <h1>Budget Vacations</h1>
+                <p>Trips that will make you scream! (with joy)</p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="video.html">About Us</a></li>
+                <li class="active"><a href="form.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Feedback Form</h1>
+            <form method="get" class="myform" action="thanks.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Phone Number*<input type="tel" name="phone" required placeholder="###-###-####"></label>
+                    <label>Email*<input type="email" name="email" required placeholder="abc@abc.com"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>How did you discover us?</legend>
+                    <select name="navigation_type">
+                        <option value="none">Please select a method</option>
+                        <option value="direct">a direct link</option>
+                        <option value="search">a search engine</option>
+                        <option value="ad">an advertisement</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Preffered Communication</legend>
+                    <label><input type="radio" name="contact" value="phone">Phone</label>
+                    <label><input type="radio" name="contact" value="email">Email</label>
+                    <label><input type="radio" name="contact" value="text">Text</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Comments</legend>
+                    <label> Tell us what you think!
+                        <textarea name="comments"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Send Your Feedback">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 &bull; Budget Vacations &bull; <a href="mailto:10875037@uvu.edu">Email Us Directly</a></p>
+        </footer>
+    </body>
+</html>
